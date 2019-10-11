@@ -12,4 +12,6 @@ RUN set -x \
     && yum remove -y wget \
     && yum clean all
 
+ADD cli/TCPPING.cli /opt/jboss/tools/cli/jgroups/discovery/
+
 USER 1000
